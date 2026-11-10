@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Busy Bee Restro – North Indian Restaurant, Naini Prayagraj</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpolygon points='24,2 44,13 44,35 24,46 4,35 4,13' fill='%23f5b700'/%3E%3Ctext x='24' y='33' font-size='26' font-weight='bold' text-anchor='middle' font-family='Georgia,serif' fill='%231a1200'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fffbea;--surface:#fff;--text:#231a00;--muted:#6b5d33;--accent:#e6a100;--on:#1a1200;--line:#efe2b5;--hero:#1a1200;--herotext:#fff6d6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14100a;--surface:#211a0c;--text:#f6ecd0;--muted:#bfae80;--accent:#f5b700;--line:#3a2f14;--hero:#0d0a04;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14100a;--surface:#211a0c;--text:#f6ecd0;--muted:#bfae80;--accent:#f5b700;--line:#3a2f14;--hero:#0d0a04;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:9px;font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem}
+.logo svg{width:38px;height:38px;transition:transform .4s}.logo:hover svg{transform:rotate(-10deg) scale(1.1)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:500}
+@media(max-width:640px){nav ul{display:none}}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.92rem;border:2px solid var(--accent);background:var(--accent);color:var(--on);cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px #f5b70055}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-24px) rotate(10deg)}}
+@keyframes flow{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+@keyframes ring{0%{box-shadow:0 0 0 0 #25d366aa}100%{box-shadow:0 0 0 22px #25d36600}}
+@keyframes slide{to{transform:translateX(-50%)}}
+@keyframes shine{to{background-position:200% center}}
+@keyframes fly{0%{transform:translate(-10vw,10px) rotate(8deg)}50%{transform:translate(50vw,-30px) rotate(-6deg)}100%{transform:translate(110vw,10px) rotate(8deg)}}
+@keyframes buzz{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.6)}}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--hero),#4a3500,var(--hero));background-size:300% 300%;animation:flow 14s ease infinite;color:var(--herotext);text-align:center;padding:80px 0 70px}
+.hero .wrap{position:relative;z-index:1}
+.bee{position:absolute;top:18%;left:0;font-size:2rem;animation:fly 16s linear infinite;opacity:.9}
+.bee.b2{top:62%;animation-duration:22s;animation-delay:-8s;font-size:1.5rem}
+.logo-big{width:100px;height:100px;display:block;margin:0 auto 14px;animation:pop .8s both,drift 6s 1s ease-in-out infinite;filter:drop-shadow(0 6px 14px #0008)}
+.wing{transform-origin:24px 18px;animation:buzz .25s infinite}
+.badge{display:inline-block;border:1px solid #ffffff55;padding:4px 14px;border-radius:999px;font-size:.85rem;animation:pop .7s both}
+.hero h1{font-size:clamp(2.4rem,7vw,4.2rem);margin:16px 0 4px;background:linear-gradient(90deg,#fff6d6,#f5b700,#fff6d6);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .9s .15s both,shine 5s linear infinite}
+.hero .hi{font-size:1.3rem;opacity:.9;margin-bottom:14px;animation:up .9s .3s both}
+.hero p{max-width:560px;margin:0 auto 26px;opacity:.9;animation:up .9s .45s both}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:up .9s .6s both}
+.stats{display:flex;justify-content:center;gap:34px;margin-top:38px;flex-wrap:wrap;animation:up .9s .8s both}
+.stats b{display:block;font-size:1.5rem;font-family:'Playfair Display',serif;color:#f5b700}
+.stats span{font-size:.8rem;opacity:.8}
+.strip{background:var(--accent);color:var(--on);overflow:hidden;white-space:nowrap;font-weight:600;padding:10px 0}
+.strip div{display:inline-block;width:max-content;animation:slide 22s linear infinite}
+.strip span{padding:0 26px}
+section{padding:64px 0}
+.title{text-align:center;margin-bottom:34px}
+.title h2{font-size:clamp(1.8rem,4vw,2.4rem)}
+.title p{color:var(--muted);margin:6px 0 0}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 14px 30px #0002}
+.card .ic{font-size:2rem;display:inline-block;animation:drift 5s ease-in-out infinite}
+.card h3{font-size:1.15rem;margin:8px 0 4px}.card p{margin:0;color:var(--muted);font-size:.92rem}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+.tab{padding:8px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:500 .9rem 'Poppins',sans-serif;cursor:pointer;transition:all .25s}
+.tab:hover{transform:translateY(-2px);border-color:var(--accent)}
+.tab[aria-selected="true"]{background:var(--accent);color:var(--on);border-color:var(--accent)}
+.menu{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;animation:pop .45s both;transition:transform .25s,border-color .25s}
+.item:hover{transform:translateX(6px);border-color:var(--accent)}
+.item:nth-child(2){animation-delay:.05s}.item:nth-child(3){animation-delay:.1s}.item:nth-child(4){animation-delay:.15s}.item:nth-child(5){animation-delay:.2s}.item:nth-child(6){animation-delay:.25s}.item:nth-child(n+7){animation-delay:.3s}
+.hex{flex:none;width:14px;height:16px;margin-top:5px;background:var(--accent);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.item b{display:block;font-weight:600}.item small{color:var(--muted)}
+.note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:18px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.two{display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.order{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.contact{display:grid;gap:14px}
+.contact div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.contact small{color:var(--muted);display:block}
+.big{background:linear-gradient(135deg,#f5b700,#e67700);color:#1a1200;border-radius:20px;padding:40px;text-align:center}
+.big .rate{font-size:3.4rem;font-family:'Playfair Display',serif;line-height:1}
+footer{background:var(--hero);color:var(--herotext);text-align:center;padding:28px 20px;font-size:.88rem}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 4px 14px #0004;z-index:30;animation:ring 2s infinite}
+@supports (animation-timeline:view()){.title,.two>*{animation:up linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a href="#top" class="logo"><svg viewBox="0 0 48 48" aria-hidden="true"><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="#f5b700"/><text x="24" y="33" font-size="26" font-weight="bold" text-anchor="middle" font-family="Georgia,serif" fill="#1a1200">B</text></svg>Busy Bee</a>
+<ul><li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#order">Order</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="tel:+918887740873">Call Now</a></div></nav>
+
+<header class="hero" id="top"><span class="bee">🐝</span><span class="bee b2">🐝</span><div class="wrap">
+<svg class="logo-big" viewBox="0 0 48 48" role="img" aria-label="Busy Bee Restro logo"><ellipse class="wing" cx="14" cy="9" rx="7" ry="4" fill="#fff" opacity=".8"/><ellipse class="wing" cx="34" cy="9" rx="7" ry="4" fill="#fff" opacity=".8"/><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="#f5b700"/><text x="24" y="33" font-size="26" font-weight="bold" text-anchor="middle" font-family="Georgia,serif" fill="#1a1200">B</text></svg>
+<span class="badge">North Indian · Chinese · Continental</span>
+<h1>Busy Bee Restro</h1>
+<div class="hi">बिज़ी बी रेस्तरॉ</div>
+<p>Flavourful North Indian food and more in Naini, Prayagraj. Dine in, drive through, or get it delivered to your door.</p>
+<div class="cta"><a class="btn" href="#menu">View Menu</a><a class="btn ghost" href="#order">Order Online</a></div>
+<div class="stats"><div><b>3.8 ★</b><span>696 Google reviews</span></div><div><b>₹200–1,400</b><span>per person</span></div><div><b>11 PM</b><span>open till</span></div></div>
+</div></header>
+<div class="strip"><div><span>🍛 North Indian</span><span>🍜 Chinese</span><span>🍕 Pizza &amp; Burgers</span><span>🚗 Drive-through</span><span>🛵 No-contact Delivery</span><span>🎉 Family &amp; Group Dining</span><span>🍛 North Indian</span><span>🍜 Chinese</span><span>🍕 Pizza &amp; Burgers</span><span>🚗 Drive-through</span><span>🛵 No-contact Delivery</span><span>🎉 Family &amp; Group Dining</span></div></div>
+
+<section id="about"><div class="wrap">
+<div class="title"><h2>Why people love Busy Bee</h2><p>Great taste, a welcoming space, for every budget.</p></div>
+<div class="grid">
+<div class="card"><div class="ic">🍛</div><h3>Rich North Indian Flavours</h3><p>Slow cooked curries, fresh tandoor breads and crowd favourites.</p></div>
+<div class="card"><div class="ic">🍽️</div><h3>Dine-in &amp; Drive-through</h3><p>Relax with family and friends, or grab your order on the go.</p></div>
+<div class="card"><div class="ic">🛵</div><h3>No-contact Delivery</h3><p>Hot food delivered safely to your doorstep in Naini and nearby.</p></div>
+<div class="card"><div class="ic">🏳️‍🌈</div><h3>Everyone Welcome</h3><p>A friendly, LGBTQ+ friendly space for all guests.</p></div>
+</div></div></section>
+
+<section class="alt" id="menu"><div class="wrap">
+<div class="title"><h2>Our Menu</h2><p>A taste of what we serve</p></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="menu" id="menuList"></div>
+<p class="note">Ask our staff for today’s full menu and prices.</p>
+</div></section>
+
+<section id="order"><div class="wrap">
+<div class="title"><h2>Order Online</h2><p>Craving something? We’ll bring it to you.</p></div>
+<div class="order">
+<a class="btn" href="tel:+918887740873">Call to Order</a>
+<a class="btn ghost" href="https://wa.me/918887740873?text=Hi%20Busy%20Bee%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+</div></div></section>
+
+<section class="alt" id="contact"><div class="wrap two">
+<div><h2 style="font-size:2rem;margin-bottom:14px">Visit us</h2>
+<div class="contact">
+<div><small>Address</small>Rudra Akriti Road, Arail Chauraha, Naini, Prayagraj, Uttar Pradesh 211008</div>
+<div><small>Phone</small><a href="tel:+918887740873">088877 40873</a></div>
+<div><small>Hours</small>Open daily, closes 11 PM (may vary on festivals like Diwali)</div>
+</div>
+<p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Busy+Bee+Restro+Arail+Chauraha+Naini+Prayagraj">Get Directions</a></p></div>
+<div class="big"><div class="rate">3.8 ★</div><p style="margin:8px 0 0">Rated by 696 guests on Google</p><p style="margin:8px 0 0;font-size:.85rem">Plus Code: CV39+3F Prayagraj</p></div>
+</div></section>
+
+<footer>© 2026 Busy Bee Restro · Arail Chauraha, Naini, Prayagraj</footer>
+<a class="float" href="https://wa.me/918887740873" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+const M={
+"Starters":[["Paneer Tikka","Tandoor grilled"],["Crispy Corn","Tossed with spices"],["Veg Seekh Kebab","Smoky and spiced"],["French Fries","Salted or peri peri"],["Honey Chilli Potato","Sweet and spicy"],["Veg Manchurian","Dry or gravy"]],
+"North Indian":[["Paneer Butter Masala","Rich and creamy"],["Dal Makhani","Slow cooked"],["Kadhai Paneer","Spicy and tangy"],["Shahi Paneer","Mild and royal"],["Mix Veg","Seasonal vegetables"],["Dal Tadka","Home style"]],
+"Breads &amp; Rice":[["Butter Naan","Soft and fluffy"],["Tandoori Roti","Plain or butter"],["Lachha Paratha","Layered"],["Jeera Rice","Cumin flavoured"],["Veg Biryani","With raita"],["Veg Pulao","Fragrant basmati"]],
+"Chinese":[["Veg Hakka Noodles","Wok tossed"],["Veg Fried Rice","Classic"],["Chilli Paneer","Spicy and crisp"],["Spring Rolls","Crispy veg rolls"],["Veg Momos","Steamed or fried"],["Manchow Soup","Hot and spicy"]],
+"Pizza &amp; Burgers":[["Margherita Pizza","Cheesy classic"],["Farmhouse Pizza","Loaded with veggies"],["Aloo Tikki Burger","Crispy patty"],["White Sauce Pasta","Creamy"],["Garlic Bread","With cheese"]],
+"Desserts &amp; Drinks":[["Gulab Jamun","Warm and soft"],["Ice Cream Sundae","Cool treat"],["Cold Coffee","Thick and chilled"],["Fresh Lime Soda","Sweet or salted"],["Mocktails","Fruity and fresh"]]};
+const tabs=document.getElementById('tabs'),list=document.getElementById('menuList');
+function show(k){
+ [...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));
+ list.innerHTML=M[k].map(i=>`<div class="item"><i class="hex"></i><div><b>${i[0]}</b><small>${i[1]}</small></div></div>`).join('');
+}
+Object.keys(M).forEach(k=>{const b=document.createElement('button');b.className='tab';b.dataset.k=k;b.innerHTML=k;b.setAttribute('role','tab');b.onclick=()=>show(k);tabs.appendChild(b)});
+show(Object.keys(M)[0]);
+</script>
+</body>
+</html>
